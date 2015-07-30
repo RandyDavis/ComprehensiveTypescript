@@ -1,0 +1,1 @@
+var street: string = "Main";
