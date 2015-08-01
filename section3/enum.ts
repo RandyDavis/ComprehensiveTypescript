@@ -9,6 +9,9 @@ console.log(person === Stark.Susie); // false
 
 enum MessageStatus { read, unread, pending };
 
-var status: string = MessageStatus.read;
-status = MessageStatus.unread; 
+var msgStatus: MessageStatus = MessageStatus.read;
+msgStatus = MessageStatus.unread; 
+
+// msgStatus = "not sure"; // error
+
 

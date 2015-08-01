@@ -9,4 +9,15 @@ var Stark;
 ;
 var person = Stark.Bill;
 console.log(person === Stark.Bill); // true
-console.log(person === Stark.Susie); // true
+console.log(person === Stark.Susie); // false
+// person = Stark.Tim; // error
+var MessageStatus;
+(function (MessageStatus) {
+    MessageStatus[MessageStatus["read"] = 0] = "read";
+    MessageStatus[MessageStatus["unread"] = 1] = "unread";
+    MessageStatus[MessageStatus["pending"] = 2] = "pending";
+})(MessageStatus || (MessageStatus = {}));
+;
+var msgStatus = MessageStatus.read;
+msgStatus = MessageStatus.unread;
+msgStatus = "not sure"; // error
