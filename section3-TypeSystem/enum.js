@@ -20,4 +20,5 @@ var MessageStatus;
 ;
 var msgStatus = MessageStatus.read;
 msgStatus = MessageStatus.unread;
-msgStatus = "not sure"; // error
+// msgStatus = "not sure"; // error
+//# sourceMappingURL=enum.js.map
